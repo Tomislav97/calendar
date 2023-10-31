@@ -1,0 +1,79 @@
+.date-button {
+    background: white;
+    border: unset;
+    color: #333;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.25rem;
+}
+
+.month {
+    cursor: default;
+    user-select: none
+}
+
+.week-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    cursor: default;
+    user-select: none;
+    justify-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.calendar-dates {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    justify-items: center;
+    row-gap: 1.5rem;
+}
+
+.calendar-date {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.meeting-indicator {
+    width: 0.25rem;
+    height: 0.25rem;
+    border-radius: 100%;
+    margin-top: 0.25rem;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 2rem
+}
+
+.selected-date {
+    background: red;
+    color: white;
+}
+
+.not-curr-month-date {
+    color: #d7d7d7
+}
+
+.container {
+    width: 30rem;
+}
+
+@media screen and (max-width: 1050px) {
+    .container {
+        width: 100%;
+    }
+}

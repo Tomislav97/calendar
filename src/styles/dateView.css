@@ -1,0 +1,26 @@
+.meeting-container {
+    border-radius: 8px;
+    border: 1px #333 solid;
+    padding: 1rem 1rem 0;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.primary-data {
+    color: #333;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+
+.date-view-container {
+    width: 30rem;
+}
+
+@media screen and (max-width: 1050px) {
+    .date-view-container {
+        width: 100%;
+    }
+}
